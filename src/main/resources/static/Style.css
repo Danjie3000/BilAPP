@@ -127,25 +127,6 @@ button2 {
     cursor: pointer;
 }
 
-.tre-colmn {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.tre-colmn h1 {
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.campus-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
 
 .cover {
     background: rgba(0, 13, 63, 0.7);
@@ -217,7 +198,8 @@ span.psw {
     padding: 5px;
 }
 
-/* Luk knappen (x) */
+/* Luk knappen (x). Benyttes ikke i øjeblikket */
+/*
 .close {
     position: absolute;
     right: 25px;
@@ -231,7 +213,8 @@ span.psw {
 .close:focus {
     color: red;
     cursor: pointer;
-}
+
+}*/
 
 /* Add Zoom Animation */
 .animate {
