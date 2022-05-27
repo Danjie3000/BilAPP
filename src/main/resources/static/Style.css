@@ -127,14 +127,14 @@ button2 {
     cursor: pointer;
 }
 
-.tre-colmn {
+.TreColum {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.tre-colmn h1 {
+.TreColum h1 {
     font-size: 35px;
     font-weight: 600;
 }
