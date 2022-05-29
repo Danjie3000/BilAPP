@@ -16,7 +16,6 @@
             <div class="nav-link">
                 <ul>
                     <li><a href="">Forretningsudvikler</a></li>
-                    <li><a href="">Dataregistrering</a></li>
                     <li><a href="">Skade & Udbedring</a></li>
                 </ul>
             </div>
@@ -26,17 +25,32 @@
 </header>
 <body>
 
-</body>
+<section class="midtCol2">
+    <form action="/createdatareg" method="post">
+    <label>Skriv fornavn.</label>
+    <input type="text" name="fornavn">
+    <label>Skriv efternavn.</label>
+    <input type="text" name="efternavn">
+    <label>Skriv telefonnummer.</label>
+    <input type="text" name="telefon_nummer">
+    <label>Skriv kundens E-Mail.</label>
+    <input type="text" name="email">
+    <label>Tildel et ubrugt kunde ID.</label>
+    <input type="text" name="kunde_id">
+    <label>Limited eller Unlimited?</label>
+    <input type="text" name="abonnement">
+    <label>Hvilken bil nummer er kunden tildelt?</label>
+    <input type="text" name="vogn_nummer_id">
+    <label>Skriv bilens stelnummer.</label>
+    <input type="text" name="stel_nummer">
+    <label>Kundens pris på det valgte tilbud.</label>
+    <input type="text" name="pris">
+        <div class="container">
+            <button2 type="submit"value="save"> Gem kunde </button2>
+        </div>
+</section>
 
-<!-- vedværende Footer -->
-<footer class="footer">
-    <h4>Kontakt</h4>
-    <ul>
-        <li>Tel: +45 12345678</li>
-        <li>Adresse: Kea 112 </li>
-        <li>Email: bil@bil.dk</li>
-        <li>CVR nr 12 12 12 12</li>
-    </ul>
-</footer>
-<!-- vedværende Footer -->
+</form>
+
+</body>
 </html>

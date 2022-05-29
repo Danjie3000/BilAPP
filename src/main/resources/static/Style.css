@@ -89,6 +89,13 @@ img {
     text-align: center;
 }
 
+.midtCol2 { /* Midten af skærmen. Text */
+    padding: 2% 9%;
+    font-size: 150%;
+    color: black;
+    position: center;
+}
+
 .midtCol p{
     margin: 25px 0px 0px 0px; /* Første px er fra toppen, de 2 i midten er left og right, og den sidste px er fra bunden  */
 }
@@ -158,12 +165,7 @@ input[type=text], input[type=password] {
     border-radius: 5px;
 }
 
-/* Center the image and position the close button */
-.closecontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
+
 
 .container {
     padding: 15px;
@@ -188,8 +190,8 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    width: fit-content; /* Could be more or less, depending on screen size */
+    margin: 5% auto 15% auto; /* 5% fra toppen, 15% fra bunden og centrum */
+    width: fit-content;
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 5px;
@@ -211,7 +213,7 @@ span.psw {
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
+/* Zoom animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s

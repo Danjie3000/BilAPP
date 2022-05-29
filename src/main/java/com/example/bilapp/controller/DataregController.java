@@ -1,26 +1,26 @@
 package com.example.bilapp.controller;
 
+
+import com.example.bilapp.models.Datareg;
 import com.example.bilapp.services.DataregService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.List;
-
-@RestController
-@RequestMapping("/datareg")
+@Controller
 public class DataregController {
+    DataregService dataregService;
 
-    private final DataregService dataregService;
 
-    @Autowired
-    public DataregController(DataregService dataregService) {
-        this.dataregService = dataregService;
+    @GetMapping("/createdatareg")
+    public String createDatareg() {
+        return "/createdataregistrering";
     }
 
-    @GetMapping
-    public List<Datareg> getDatareg() {
-        return dataregService.getDatareg();
+    @PostMapping("/createdatareg")
+    public String createDatareg(@ModelAttribute Datareg datareg) {
+        dataregService.createDatareg(datareg);
+        return "redirect:/";
     }
 }

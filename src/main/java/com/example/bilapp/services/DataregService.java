@@ -1,22 +1,18 @@
 package com.example.bilapp.services;
 
-import com.example.bilapp.controller.Datareg;
+import com.example.bilapp.models.Datareg;
+import com.example.bilapp.repositories.DataregRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class DataregService {
 
-    public List<Datareg> getDatareg() {
-        return List.of(
-                new Datareg(
-                        12,
-                        "Bob",
-                        "bobby",
-                        "hejhej@email.com"
+    @Autowired
+    DataregRepository dataregRepository;
 
-                )
-        );
+
+    public void createDatareg(Datareg datareg) {
+        dataregRepository.createDatareg(datareg);
     }
 }
