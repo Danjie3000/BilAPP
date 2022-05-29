@@ -197,7 +197,8 @@ span.psw {
     padding: 5px;
 }
 
-/* Luk knappen (x) */
+/* Luk knappen (x). Benyttes ikke i øjeblikket */
+/*
 .close {
     position: absolute;
     right: 25px;
@@ -211,7 +212,8 @@ span.psw {
 .close:focus {
     color: red;
     cursor: pointer;
-}
+
+}*/
 
 /* Zoom animation */
 .animate {
